@@ -121,7 +121,54 @@ In terms of level design, due to my interest in level design, I was in charge of
 
 ![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/maze.png)
 
+The idea for the design of the maze was that it had a central room with a big element that could be seen from every location of the maze as a reference, in this case, the house. Appart from the main room, the maze also has a “room” or zone for each of the puzzles, each of them in a different cardinal point and separated from the others. The design of each of these “rooms” was made by the designer the puzzle inside. Finally, as it is a maze, it also includes a set of corridors that are well connected and are similar to each other to disorient the player. However, as at first it was quite difficult to find the puzzles and orient yourself in it unless you are in the central room, Pablo Bueno Melchor included a 3D wired figure on the top of each of the puzzle rooms that can only be seen with the magic vision and that allows the player to have a general idea of where the puzzles are.
 
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/maze2.png)
 
+Finally, the decoration inside the maze was added by all the team members, depending on the area and the assets that they created, with an special mention to Gabriela Woch and Pablo Bueno Melchor that were in charge of most of it.
+Finally, as part of my level designer role task, I programmed and designed the pumpkins puzzle. 
+The puzzle I designed, the pumpkin maze, is based in a combination mechanics. The idea is that there are 4 types of doors, and everytime you open a door, you open all the doors of that type but you also close all the doors of the opposite type. Without the magic vision all the doors look the same, but with it, every door has a different type of face that differentiates it from the other ones.
 
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/pumpkin1.png)
+
+Around the puzzle, if you are using the magic vision, you can see different pumpkins that have different faces just like the doors. If you bring the pumpkins to the doors with its same face, the doors of that type will open. This creates a maze that makes you look for the different pumpkins in order to arrive in the final room where the gnome statue is.
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/maze4.png)
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/maze3.png)
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/PumpkinPuzzle.png)
+
+# 3.3.- Game Art and 3D models
+Finally, I also contributed creating some of the 3D models for the project. However, this is the field where I did less, due to four of my teammates being artists and because I focused more in the programming and the game design. 
+For the creation of the pumpkin puzzle, I created a normal pumpkin and then I made four versions of it with different faces that correspond to the four kind of “pumpkin keys” that are in the puzzle.
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/p1.png)
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/p2.png)
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/p3.png)
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/p4.png)
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/p5.png)
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/p6.png)
+
+They are all created from the first pumpkin model, so their UV’s are really similar. The texturing for them was quite simple, as pumpkins only have two colors, so I just had to look for a good looking texture for it and paint them.
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/maze3.png)
+
+For the puzzle, I also had to create four different textures with different faces for the Gnome Gate that Gabriel Woch created.
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/pumpkin1.png)
+
+In addition, I created a water well that, due to my lack of time because I was busy with other parts of the project, Gabriela Woch textured, as well as a fountain and a skull that I included at the end of my puzzle. The UVs and textures of them are included in Gabriela’s write up.
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/p8.png)
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/p9.png)
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/p10.png)
+
+Finally, I decorated my part of the maze (the pumpkin puzzle) and I helped decorating the rest of it. However, as I said before, most of the credit for this task should go to Gabriela Woch and to Pablo Bueno Melchor.
+# 4.- Conclusions
+The Devil is in the Details is the first finished game that I’ve worked in, and it has been an intense experience. Even though my background is in programming, I hadn’t worked with Unreal Engine before this project, and it has been a process of constant learning, not only about unreal but also about design, modelling, and teamwork. 
+The development during the first weeks was a real challenge because of the lack of coordination within the group, and until we found a good dynamic to work, lead, and divide tasks it was hard to merge everyone’s work together.
+However, after the first weeks we started working quite well as a team, and even though it has been a lot of work and we had to carry this project along other two that we had for other subjects, I think that we achieved a great result.
+Due to the time constraints there we several features that we designed and that couldn’t be implemented in the final version, so if we had more time or we had to start the project again, I’d focus on making the game gameplay, mechanics and objectives clearer to the player, and maybe add some narrative elements that we couldn’t include.
+However, this experience has only proven my love for developing games, and I have learnt many things that I can take use to make a better game next time and make the development of it easier.
 
