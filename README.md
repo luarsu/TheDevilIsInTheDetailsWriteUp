@@ -81,6 +81,46 @@ When the player’s life is 0, the death widget is called and the game is restar
 With all those parts combinated the whole damage system is completed.
 # 3.1.3- Picking objects system
 
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/pickingobjects.png)
+
+In order to bring the gnomes to their place and solve some puzzles, the player needs to be able to pick objects and move them around the level. To implement this functionality I created a line trace system that when the players press the picking button, it creates a line trace that might hit an object. In case this happens, the system checks if that object simulates physics, and if it does, it uses the unreal function Grab Component at Location and grabs the object at a predefined grabbed location that I included in the viewport of the first person character. 
+To release an object, it just checks that its actually holding an object and then it uses the Release Component function to drop it.
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/pick1.png)
+
+# 3.1.4- Pumpkin puzzle programming
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/PumpkinPuzzle.png)
+
+The puzzle I designed, the pumpkin maze, is based in a combination mechanics. The idea is that there are 4 types of doors, and everytime you open a door, you open all the doors of that type but you also close all the doors of the opposite type. Without the magic vision all the doors look the same, but with it, every door has a different type of face that differentiates it from the other ones.
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/pumpkin1.png)
+
+Around the puzzle, if you are using the magic vision, you can see different pumpkins that have different faces just like the doors. If you bring the pumpkins to the doors with its same face, the doors of that type will open. This creates a maze that makes you look for the different pumpkins in order to arrive in the final room where the gnome statue is.
+To program this, I combined the magic vision system and objects previously explained, the picking objects system and a new door system. This new door system adds a collision box to each of the gates and, when the player enters to them, they check if the player is holding the right pumpkin. If he is, then it calls a matinee that opens all the doors of that type and closes the doors of the opposite type.
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/pumpkin2.png)
+
+To check if the player is holding the right pumpkin, everytime we grab an object we check its class and, if it's one of the pumpkins, we set a boolean that indicates that its holding that kind of pumpkin. When the player collides with the trigger box of the doors, this boolean is checked and if it is true, it opens the doors.
+
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/pumpkin2.png)
+
+# 3.1.5-End of the game event
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/EndGameGnomes.png)
+
+When the player solves the three puzzles and brings the 3 gnomes to the altars near the house, the ending of the game is triggered: A horde of incredibly fast tar men come from the back of the house and kill you. To do this, I added a trigger box where the altars are that checks if the objects colliding are the gnomes. If we bring a gnome, the counter for the gnomes brought will increase and it will stop checking that type of gnomes, so unless we bring the 3 different types of gnomes the game doesn't end. Once we have brought them all, an event is triggered that spawns a fast monster in the back of the house location every second.
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/gnomes1.png)
+
+# 3.2.- Gameplay & level design
+
+As it is natural, The Devil is in the Details was designed by the whole team and many decisions were made together. However, some of the design tasks were divided and assigned to the different team members depending on their preferences and art or programming tasks already assigned. In my case, related to gameplay design, I designed all the features that I programmed and that are described and explained in the previous section.
+In terms of level design, due to my interest in level design, I was in charge of creating the general shape and layout of the maze. To create it, Toby Christmas created a set of modular assets that allowed me to create different types of corridors and connections between them. When these assets were imported to the game, I started creating the whole level disposition.
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/maze.png)
+
 
 
 
