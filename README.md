@@ -51,12 +51,16 @@ To make the monster say different lines and not repeat the same ones all the tim
 Another key element of the game is the magic vision mode and the hidden objects and secrets of the maze. As I was interested in creating visual effects and I designed many of the functionalities that the vision mode included, I was also in charge of program it.
 The vision mode is divided in two parts: The colour and visual effects and the visibility of the objects depending on the mode.
 To make the green visual effect I created a post processing setting that changed the colour grading by a custom one made by Pablo Bueno Melchor. 
+
 ![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/rgb.png)
+
 To make this vision mode a bit more uncomfortable and avoid the players from using it all the time, I also added a widget that made the 
 “glasses effect” and made the vision narrower.
 ![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/Glasses.png)
 Other than that, the logic behind the glasses is pretty simple. When the player presses the glasses button, the post processing effects change.
+
 ![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/magicvision1.png)
+
 For the invisibility of the objects, I created an invisible object class that parents any object that is hidden without the vision mode activated (including the monster) and that hides the object in game and disables the collisions for them.
 ![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/magicvision2.png)
 # 3.1.3- Health System & Damage system
@@ -64,8 +68,11 @@ The idea for the health system is quite basic: Everytime that the monster catche
 First of all, I had to create a widget that shows the hearts that are left. Whenever the monster touches you, this widget deletes a full heart and adds an empty one to represent the life loss.
 ![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/heart.png)
 Also, to make the damage more noticeable to the player, I added a blood splash that appears when the damage event is called and plays a fade animation to make it look better.
+
 ![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/damage1.png)
-![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/blood.png)
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/Blood.png)
+
 Finally, I have to include some code to the monster and to the player. The monster’s blueprint includes a function that checks if it has collided with the player and, if so, it applies damage to him and stays in the same place for a few seconds to let the player escape.
 ![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/damage2.png)
 As the monster applies the damage, when the player receives it it triggers an event that reduces the total health variable in 1, deletes a full heart and creates an empty one.
