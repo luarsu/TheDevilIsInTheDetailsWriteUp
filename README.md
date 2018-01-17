@@ -16,4 +16,6 @@ I think that it is also important to mention that working in a team of 6 people 
 In this position I was in charge of coordinating everyone, dividing tasks, setting up deadlines, checking that everyone met them and, inside the game, I also had to make sure that all the different features that each of us programmed worked well together.
 # 3.1.- Gameplay programming
 # 3.1.1-The Tar Man AI 
+![Bill the Tar Man](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/monster2.png)
 One of the core elements of The Devil is in the Details is the Bill the Tar 
+
