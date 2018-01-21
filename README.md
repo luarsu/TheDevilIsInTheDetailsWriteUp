@@ -120,14 +120,19 @@ As it is natural, The Devil is in the Details was designed by the whole team and
 In terms of level design, due to my interest in level design, I was in charge of creating the general shape and layout of the maze. To create it, Toby Christmas created a set of modular assets that allowed me to create different types of corridors and connections between them. When these assets were imported to the game, I started creating the whole level disposition.
 
 ![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/maze.png)
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/ld12.jpg)
 
 The idea for the design of the maze was that it had a central room with a big element that could be seen from every location of the maze as a reference, in this case, the house. Appart from the main room, the maze also has a “room” or zone for each of the puzzles, each of them in a different cardinal point and separated from the others. The design of each of these “rooms” was made by the designer the puzzle inside. Finally, as it is a maze, it also includes a set of corridors that are well connected and are similar to each other to disorient the player. However, as at first it was quite difficult to find the puzzles and orient yourself in it unless you are in the central room, Pablo Bueno Melchor included a 3D wired figure on the top of each of the puzzle rooms that can only be seen with the magic vision and that allows the player to have a general idea of where the puzzles are.
 
 ![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/maze2.png)
 
-Finally, the decoration inside the maze was added by all the team members, depending on the area and the assets that they created, with an special mention to Gabriela Woch and Pablo Bueno Melchor that were in charge of most of it.
+The decoration inside the maze was added by all the team members, depending on the area and the assets that they created, with an special mention to Gabriela Woch and Pablo Bueno Melchor that were in charge of most of it.
+
+![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/ld2.jpg)
+
 Finally, as part of my level designer role task, I programmed and designed the pumpkins puzzle. 
 The puzzle I designed, the pumpkin maze, is based in a combination mechanics. The idea is that there are 4 types of doors, and everytime you open a door, you open all the doors of that type but you also close all the doors of the opposite type. Without the magic vision all the doors look the same, but with it, every door has a different type of face that differentiates it from the other ones.
+
 
 ![](https://github.com/luarsu/TheDevilIsInTheDetailsWriteUp/blob/master/Screenshoots/pumpkin1.png)
 
